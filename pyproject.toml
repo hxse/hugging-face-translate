@@ -1,0 +1,21 @@
+[tool.pdm]
+
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "hxse", email = "narutohy@163.com"},
+]
+dependencies = [
+    "transformers>=4.26.1",
+    "torch @ https://download.pytorch.org/whl/cu115/torch-1.11.0%2Bcu115-cp310-cp310-win_amd64.whl",
+    "sentencepiece>=0.1.97",
+]
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+[[tool.pdm.source]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+verify_ssl = true
+name = "pypi"
